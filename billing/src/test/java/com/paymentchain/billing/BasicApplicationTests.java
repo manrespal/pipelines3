@@ -12,6 +12,8 @@ import java.util.Base64;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+/**import org.junit.Assert;
+import org.junit.test; **/
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -103,5 +105,11 @@ public class BasicApplicationTests {
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.invoiceId").value(1));
     }
+
+    /**@test
+    public void contextloads(){
+        String meessage= " default message cambio 11 test devops";
+        Assert.assertNotNull(meessage);
+    } **/
 
 }
