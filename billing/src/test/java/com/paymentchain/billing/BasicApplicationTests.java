@@ -112,4 +112,6 @@ public class BasicApplicationTests {
         Assert.assertNotNull(meessage);
     } **/
 
+    //**hola mundo probando pipeline con merge automatico */
+
 }
