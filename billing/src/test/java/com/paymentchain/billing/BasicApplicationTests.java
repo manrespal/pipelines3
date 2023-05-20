@@ -112,6 +112,8 @@ public class BasicApplicationTests {
         Assert.assertNotNull(meessage);
     } **/
 
-    //**hola mundo probando pipeline con merge automatico */
-
-}
+}/** nuevo cambios realizados wooujjju */
+/** Prueba 20/05/2023 Luis Vasquez */
+/** Prueba 20/05/2023 Luis Vasquez Vera */
+/** Prueba 20/05/2023 Luis Vasquez Vera 3*/
+/** Prueba 20/05/2023 Luis Vasquez Vera 4*/
