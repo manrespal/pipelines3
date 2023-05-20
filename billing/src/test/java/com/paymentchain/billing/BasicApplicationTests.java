@@ -12,8 +12,6 @@ import java.util.Base64;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-/**import org.junit.Assert;
-import org.junit.test; **/
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -85,9 +83,7 @@ public class BasicApplicationTests {
         ).andDo(print()).andExpect(status().isOk());
     }
 
-    /**
-     * Test call of create method, on weblayer.
-     */
+  
     @Test
     public void testFindById() throws Exception {
         Base64.Encoder encoder = Base64.getEncoder();
