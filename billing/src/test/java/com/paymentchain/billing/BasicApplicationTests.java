@@ -17,7 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.http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.MediaType;
+import org.springframework.http.MediaType;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import org.springframework.test.web.servlet.MockMvc;
@@ -29,7 +29,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 /**
- * @autor SOTOBOTERO vs Luis Vasquez Vera This set of test allow check the behavior of the web layer Esta es la ultima prueba de hoy luis
+ * @author sotobotero This set of test allow check the behavior of the web layer
  * application listening like as it would do in production, sending and http
  * requests and assert if method was called and http status is the expected. We
  * are using spring MVC test framework to perfom integration tests
@@ -65,7 +65,7 @@ public class BasicApplicationTests {
             throw new RuntimeException(e);
         }
     }
-    }
+
     /**
      * Test call of create method, on weblayer.
      */
@@ -83,7 +83,9 @@ public class BasicApplicationTests {
         ).andDo(print()).andExpect(status().isOk());
     }
 
-  
+    /**
+     * Test call of create method, on weblayer.
+     */
     @Test
     public void testFindById() throws Exception {
         Base64.Encoder encoder = Base64.getEncoder();
@@ -101,9 +103,5 @@ public class BasicApplicationTests {
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.invoiceId").value(1));
     }
-/** nuevo cambios realizados wooujjju */
-/** Prueba 20/05/2023 Luis Vasquez */
-/** Prueba 20/05/2023 Luis Vasquez Vera */
-/** Prueba 20/05/2023 Luis Vasquez Vera 3*/
 
-/**cambio codigo arreglo 20-05-2023 */
+}
