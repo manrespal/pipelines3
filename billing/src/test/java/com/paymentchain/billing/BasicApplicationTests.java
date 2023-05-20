@@ -12,8 +12,6 @@ import java.util.Base64;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-/**import org.junit.Assert;
-import org.junit.test; **/
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -67,7 +65,7 @@ public class BasicApplicationTests {
             throw new RuntimeException(e);
         }
     }
-
+}
     /**
      * Test call of create method, on weblayer.
      */
@@ -85,9 +83,7 @@ public class BasicApplicationTests {
         ).andDo(print()).andExpect(status().isOk());
     }
 
-    /**
-     * Test call of create method, on weblayer.
-     */
+  
     @Test
     public void testFindById() throws Exception {
         Base64.Encoder encoder = Base64.getEncoder();
@@ -106,13 +102,5 @@ public class BasicApplicationTests {
                 .andExpect(MockMvcResultMatchers.jsonPath("$.invoiceId").value(1));
     }
 
-    /**@test
-    public void contextloads(){
-        String meessage= " default message cambio 11 test devops";
-        Assert.assertNotNull(meessage);
-    } **/
+/**cambio codigo arreglo 20-05-2023 */
 
-}/** nuevo cambios realizados wooujjju */
-/** Prueba 20/05/2023 Luis Vasquez */
-/** Prueba 20/05/2023 Luis Vasquez Vera */
-/** Prueba 20/05/2023 Luis Vasquez Vera 3*/
