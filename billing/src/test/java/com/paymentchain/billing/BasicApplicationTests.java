@@ -17,7 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.http.MediaType;
+import org.springframework.http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.MediaType;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import org.springframework.test.web.servlet.MockMvc;
@@ -65,7 +65,7 @@ public class BasicApplicationTests {
             throw new RuntimeException(e);
         }
     }
-}
+    }
     /**
      * Test call of create method, on weblayer.
      */
@@ -101,6 +101,10 @@ public class BasicApplicationTests {
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.invoiceId").value(1));
     }
+/** nuevo cambios realizados wooujjju */
+/** Prueba 20/05/2023 Luis Vasquez */
+/** Prueba 20/05/2023 Luis Vasquez Vera */
+/** Prueba 20/05/2023 Luis Vasquez Vera 3*/
 
 /**cambio codigo arreglo 20-05-2023 */
 
